@@ -12,7 +12,7 @@ Capify helps you:
 - 🔥 Generate 3 unique captions per prompt
 - 🎨 Customize tone and audience
 - 📈 Auto-attach trending hashtags
-- ⚡ Get results in under 3 seconds
+- ⚡ Get results in under 30 seconds
 - ✍️ Maintain consistent brand voice
 
 ---
