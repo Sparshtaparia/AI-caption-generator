@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Sparkles, ArrowRight, Star, CheckCircle, Play, Target, Hash, Quote, Lightbulb } from "lucide-react"
+import { Sparkles, ArrowRight, Star, CheckCircle, Target, Hash, Quote, Film, Mic, Video } from "lucide-react"
 
 export default function LandingPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -33,6 +33,9 @@ export default function LandingPage() {
               <a href="#about" className="text-gray-300 hover:text-white transition-colors font-medium">
                 About
               </a>
+              <Link href="/studio">
+                <span className="text-gray-300 hover:text-white transition-colors font-medium">Content Studio</span>
+              </Link>
               <Link href="/pricing">
                 <span className="text-gray-300 hover:text-white transition-colors font-medium">Pricing</span>
               </Link>
@@ -65,10 +68,10 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-2xl md:text-3xl text-gray-400 mb-4 max-w-4xl mx-auto leading-relaxed font-light tracking-wide">
-              AND WHEN YOU NEED CAPTIONS.
+              AI CAPTIONS + CONTENT STUDIO
             </p>
             <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto leading-relaxed font-light">
-              Let AI do it for you.
+              From Instagram captions to full screenplays - AI does it all.
             </p>
           </div>
 
@@ -82,14 +85,14 @@ export default function LandingPage() {
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>
-            <Link href="/demo">
+            <Link href="/studio">
               <Button
                 variant="outline"
                 size="lg"
                 className="border-2 border-white text-white hover:bg-white hover:text-black font-bold text-xl px-16 py-6 rounded-full transition-all duration-300 transform hover:scale-105 bg-transparent"
               >
-                <Play className="mr-3 h-6 w-6" />
-                Watch Demo
+                <Film className="mr-3 h-6 w-6" />
+                Content Studio
               </Button>
             </Link>
           </div>
@@ -97,10 +100,10 @@ export default function LandingPage() {
           {/* Modern Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
             {[
-              { number: "3.5K+", label: "Captions Generated" },
-              { number: "84%", label: "Engagement Boost" },
-              { number: "1K+", label: "Happy Creators" },
-              { number: "95%", label: "Uptime" },
+              { number: "50K+", label: "Captions Generated" },
+              { number: "847%", label: "Engagement Boost" },
+              { number: "12K+", label: "Happy Creators" },
+              { number: "99.9%", label: "Uptime" },
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="text-5xl md:text-6xl font-black text-white mb-3 group-hover:scale-110 transition-transform">
@@ -118,30 +121,30 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-24">
             <h2 className="text-7xl md:text-8xl font-black mb-8 leading-none tracking-tighter">
-              <span className="text-white">SMART</span>
+              <span className="text-white">COMPLETE</span>
               <br />
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                CAPTIONS
+                SOLUTION
               </span>
             </h2>
             <p className="text-2xl text-gray-400 max-w-4xl mx-auto font-light">
-              AI that understands your brand, your audience, and what makes content go viral
+              From quick captions to full creative projects - everything you need in one platform
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
             {[
               {
-                icon: <Lightbulb className="h-20 w-20 text-yellow-400" />,
-                title: "Instant Ideas",
-                description: "Generate multiple caption variations in seconds. Never stare at a blank screen again.",
-                features: ["3-second generation", "Multiple variations", "Brand voice matching"],
+                icon: <Hash className="h-20 w-20 text-yellow-400" />,
+                title: "Smart Captions",
+                description: "AI-powered Instagram captions with trending hashtags and perfect targeting.",
+                features: ["3-second generation", "Multiple variations", "Trending hashtags"],
               },
               {
-                icon: <Hash className="h-20 w-20 text-yellow-400" />,
-                title: "Trending Tags",
-                description: "Real-time hashtag intelligence that gets your content discovered by the right audience.",
-                features: ["20+ trending hashtags", "Niche-specific tags", "Performance tracking"],
+                icon: <Film className="h-20 w-20 text-yellow-400" />,
+                title: "Content Studio",
+                description: "Full creative writing suite for scripts, screenplays, video concepts, and more.",
+                features: ["Screenplays & scripts", "Video concepts", "Podcast outlines"],
               },
               {
                 icon: <Target className="h-20 w-20 text-yellow-400" />,
@@ -179,6 +182,69 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Content Studio Showcase */}
+      <section className="py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/10 to-orange-900/10" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-7xl md:text-8xl font-black mb-8 leading-none tracking-tighter">
+              <span className="text-white">CONTENT</span>
+              <br />
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                STUDIO
+              </span>
+            </h2>
+            <p className="text-2xl text-gray-400 max-w-4xl mx-auto font-light">
+              Beyond captions - create full screenplays, video concepts, podcast outlines, and more
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                icon: <Film className="h-16 w-16 text-yellow-400" />,
+                title: "Screenplays & Scripts",
+                description: "Professional screenplay formatting with industry-standard structure and dialogue.",
+              },
+              {
+                icon: <Video className="h-16 w-16 text-yellow-400" />,
+                title: "Video Concepts",
+                description: "Complete video concepts with storyboards, scenes, and production notes.",
+              },
+              {
+                icon: <Mic className="h-16 w-16 text-yellow-400" />,
+                title: "Podcast Outlines",
+                description: "Engaging podcast structures with segments, talking points, and flow.",
+              },
+            ].map((feature, index) => (
+              <Card
+                key={index}
+                className="bg-white/5 border-white/10 hover:border-yellow-400/50 transition-all duration-300 transform hover:scale-105"
+              >
+                <CardContent className="p-8 text-center">
+                  <div className="flex justify-center mb-6">{feature.icon}</div>
+                  <h3 className="text-2xl font-black text-white mb-4">{feature.title}</h3>
+                  <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/studio">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-black text-xl px-16 py-6 rounded-full hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-110"
+              >
+                <Film className="mr-3 h-6 w-6" />
+                Try Content Studio
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-900/10 to-orange-900/10" />
@@ -199,15 +265,15 @@ export default function LandingPage() {
                   engagement. That's why we built Capify.
                 </p>
                 <p>
-                  Our AI doesn't just generate text—it crafts messages that connect, inspire, and convert. Because your
-                  content deserves captions as good as your creativity.
+                  Our AI doesn't just generate text—it crafts messages that connect, inspire, and convert. From quick
+                  Instagram captions to full creative projects, we've got you covered.
                 </p>
               </div>
 
               <div className="mt-16 p-8 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-sm">
                 <p className="text-gray-400 text-sm mb-3 uppercase tracking-wider">Created by</p>
                 <p className="text-3xl font-black text-yellow-400">Sparsh Taparia</p>
-                <p className="text-gray-300 mt-2 text-lg">CSE Student, VIT Vellore</p>
+                <p className="text-gray-300 mt-2 text-lg">AI Engineer & Content Strategist</p>
               </div>
             </div>
 
@@ -221,7 +287,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <h3 className="text-4xl font-black text-white mb-6">AI-Powered</h3>
-                  <p className="text-gray-300 text-xl">Caption Generation</p>
+                  <p className="text-gray-300 text-xl">Complete Creative Suite</p>
                 </div>
               </div>
             </div>
@@ -248,7 +314,7 @@ export default function LandingPage() {
                 name: "Sarah Chen",
                 role: "Fashion Creator",
                 content:
-                  "My engagement went from 2% to 15% in one month. Capify doesn't just write captions—it creates connections.",
+                  "Capify's Content Studio changed everything. I went from struggling with captions to creating full video concepts and scripts. My engagement went from 2% to 15% in one month!",
                 followers: "347K",
                 growth: "+847%",
               },
@@ -256,7 +322,7 @@ export default function LandingPage() {
                 name: "Marcus Rodriguez",
                 role: "Fitness Coach",
                 content:
-                  "I was spending hours on captions. Now I create a month's content in minutes. My course sales tripled.",
+                  "The Content Studio is incredible. I create workout video scripts, podcast outlines, and Instagram captions all in one place. My course sales tripled!",
                 followers: "156K",
                 growth: "+340%",
               },
@@ -264,7 +330,7 @@ export default function LandingPage() {
                 name: "Emma Thompson",
                 role: "Food Blogger",
                 content:
-                  "The hashtag intelligence is incredible. I'm reaching audiences I never knew existed. Brand deals doubled.",
+                  "From recipe captions to full cooking show scripts - Capify Studio does it all. I'm reaching audiences I never knew existed. Brand deals doubled.",
                 followers: "289K",
                 growth: "+500%",
               },
@@ -319,18 +385,28 @@ export default function LandingPage() {
             </span>
           </h2>
           <p className="text-2xl text-gray-300 mb-16 max-w-3xl mx-auto font-light">
-            Join thousands of creators who never run out of caption ideas
+            Join thousands of creators who never run out of content ideas
           </p>
-          <Link href="/generator">
-            <Button
-              size="lg"
-              className="bg-white text-black font-black text-2xl px-20 py-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 shadow-2xl"
-            >
-              <Sparkles className="mr-4 h-8 w-8" />
-              Get Started Now
-              <ArrowRight className="ml-4 h-8 w-8" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <Link href="/generator">
+              <Button
+                size="lg"
+                className="bg-white text-black font-black text-2xl px-20 py-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 shadow-2xl"
+              >
+                <Sparkles className="mr-4 h-8 w-8" />
+                Start with Captions
+              </Button>
+            </Link>
+            <Link href="/studio">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-black text-2xl px-20 py-8 rounded-full hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-110 shadow-2xl"
+              >
+                <Film className="mr-4 h-8 w-8" />
+                Try Content Studio
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -344,7 +420,7 @@ export default function LandingPage() {
               </span>
             </div>
             <div className="text-gray-400 text-center md:text-right">
-              <p className="text-lg">© 2025 Capify. All rights reserved.</p>
+              <p className="text-lg">© 2024 Capify. All rights reserved.</p>
               <p className="text-sm mt-2">Created by Sparsh Taparia</p>
             </div>
           </div>

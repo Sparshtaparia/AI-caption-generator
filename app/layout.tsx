@@ -2,12 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Capify',
-  description: 'Created by Sparsh',
-  generator: 'Sparsh',
-  icons: {
-    icon: '/Screenshot 2025-06-27 230957.png', // or '/logo.png' for PNG
-  },
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.dev',
 }
 
 export default function RootLayout({

@@ -23,7 +23,7 @@ export async function generateInstagramCaption(formData: FormData) {
 
   try {
     const { text } = await generateText({
-      model: openrouter("deepseek/deepseek-r1-distill-llama-70b"),
+      model: openrouter("deepseek/deepseek-r1:free"),
       system: `You are an expert Instagram content creator and social media marketer. Generate engaging Instagram captions that drive engagement and reach.
 
 Rules:

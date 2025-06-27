@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, ArrowLeft, Sparkles, Zap, Crown } from "lucide-react"
+import { CheckCircle, ArrowLeft, Sparkles, Zap, Crown, Film, Hash, Mic } from "lucide-react"
 
 export default function PricingPage() {
   const plans = [
@@ -16,6 +16,7 @@ export default function PricingPage() {
         "50 AI-generated captions per month",
         "Basic hashtag suggestions",
         "3 tone variations",
+        "Content Studio access (5 projects/month)",
         "Email support",
         "Mobile app access",
       ],
@@ -31,6 +32,9 @@ export default function PricingPage() {
         "500 AI-generated captions per month",
         "Advanced hashtag intelligence",
         "8 tone variations",
+        "Unlimited Content Studio access",
+        "Screenplays & video concepts",
+        "Podcast outline generation",
         "Audience targeting",
         "Priority support",
         "Analytics dashboard",
@@ -46,9 +50,12 @@ export default function PricingPage() {
       description: "For agencies and large-scale operations",
       features: [
         "Unlimited AI-generated captions",
+        "Unlimited Content Studio projects",
         "Custom brand voice training",
         "Advanced analytics & reporting",
         "Team collaboration tools",
+        "Full screenplay formatting",
+        "Character development tools",
         "API access",
         "Dedicated account manager",
         "Custom integrations",
@@ -93,6 +100,20 @@ export default function PricingPage() {
           <p className="text-2xl text-gray-400 max-w-3xl mx-auto">
             Scale your content creation with plans designed for every stage of your journey
           </p>
+          <div className="flex justify-center items-center space-x-8 mt-8">
+            <div className="flex items-center space-x-2">
+              <Hash className="h-6 w-6 text-yellow-400" />
+              <span className="text-gray-300">AI Captions</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Film className="h-6 w-6 text-yellow-400" />
+              <span className="text-gray-300">Content Studio</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Mic className="h-6 w-6 text-yellow-400" />
+              <span className="text-gray-300">Full Creative Suite</span>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
