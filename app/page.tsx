@@ -344,7 +344,7 @@ export default function LandingPage() {
               </span>
             </div>
             <div className="text-gray-400 text-center md:text-right">
-              <p className="text-lg">© 2024 Capify. All rights reserved.</p>
+              <p className="text-lg">© 2025 Capify. All rights reserved.</p>
               <p className="text-sm mt-2">Created by Sparsh Taparia</p>
             </div>
           </div>
