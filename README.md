@@ -58,7 +58,7 @@ Capify helps you:
 - npm or yarn
 - OpenRouter API key
 
-### 📦 Installation
+### 📦 Installation/Cloning the project
 
 ```bash
 git clone https://github.com/Sparshtaparia/AI-caption-generator.git
@@ -66,5 +66,5 @@ cd AI-caption-generator
 
 # Install dependencies
 npm install
-# or
-yarn install
+npm install next react react-dom--legacy-peer-deps
+
