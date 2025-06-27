@@ -100,10 +100,10 @@ export default function LandingPage() {
           {/* Modern Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
             {[
-              { number: "50K+", label: "Captions Generated" },
-              { number: "847%", label: "Engagement Boost" },
-              { number: "12K+", label: "Happy Creators" },
-              { number: "99.9%", label: "Uptime" },
+              { number: "3K+", label: "Captions Generated" },
+              { number: "90%", label: "Engagement Boost" },
+              { number: "1K+", label: "Happy Creators" },
+              { number: "95%", label: "Uptime" },
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="text-5xl md:text-6xl font-black text-white mb-3 group-hover:scale-110 transition-transform">
@@ -273,7 +273,7 @@ export default function LandingPage() {
               <div className="mt-16 p-8 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-sm">
                 <p className="text-gray-400 text-sm mb-3 uppercase tracking-wider">Created by</p>
                 <p className="text-3xl font-black text-yellow-400">Sparsh Taparia</p>
-                <p className="text-gray-300 mt-2 text-lg">AI Engineer & Content Strategist</p>
+                <p className="text-gray-300 mt-2 text-lg">CSE Student, VIT Vellore</p>
               </div>
             </div>
 
@@ -420,7 +420,7 @@ export default function LandingPage() {
               </span>
             </div>
             <div className="text-gray-400 text-center md:text-right">
-              <p className="text-lg">© 2024 Capify. All rights reserved.</p>
+              <p className="text-lg">© 2025 Capify. All rights reserved.</p>
               <p className="text-sm mt-2">Created by Sparsh Taparia</p>
             </div>
           </div>
