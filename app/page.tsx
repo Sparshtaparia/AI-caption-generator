@@ -97,10 +97,10 @@ export default function LandingPage() {
           {/* Modern Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
             {[
-              { number: "50K+", label: "Captions Generated" },
-              { number: "847%", label: "Engagement Boost" },
-              { number: "12K+", label: "Happy Creators" },
-              { number: "99.9%", label: "Uptime" },
+              { number: "3.5K+", label: "Captions Generated" },
+              { number: "84%", label: "Engagement Boost" },
+              { number: "1K+", label: "Happy Creators" },
+              { number: "95%", label: "Uptime" },
             ].map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="text-5xl md:text-6xl font-black text-white mb-3 group-hover:scale-110 transition-transform">
