@@ -65,9 +65,9 @@ npm run dev
 ```
 With respect to the local installation;
 The API key needs to be used by the developer by himself/herself as:
-Step 1: Create a `.env.local` file
-Step 2: Get your OpenRouter API Key
-Step 3: Add the key to your `.env.local` file
-Step 4: Restart your development server
+- Step 1: Create a `.env.local` file 
+- Step 2: Get your OpenRouter API Key
+- Step 3: Add the key to your `.env.local` file
+- Step 4: Restart your development server
 
 
