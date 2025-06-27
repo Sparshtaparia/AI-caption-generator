@@ -1,6 +1,6 @@
 # 🚀 Capify – AI-Powered Instagram Caption Generator
 
-##Link: 
+## Link: https://capify-sparsh-taparias-projects.vercel.app
 
 Capify is an AI-driven Instagram caption generator built for creators, brands, and marketers. Describe your content, and Capify generates multiple high-converting captions tailored to your audience, tone, and trends — in seconds.
 
