@@ -1,40 +1,61 @@
-# 🚀 Capify – AI-Powered Instagram Caption Generator
+# 🚀 Capify – AI Tools for Content Creators
 
 ## Link: https://capify-sparsh-taparias-projects.vercel.app
 
-Capify is an AI-driven Instagram caption generator built for creators, brands, and marketers. Describe your content, and Capify generates multiple high-converting captions tailored to your audience, tone, and trends — in seconds.
+Capify is a dual-purpose AI platform designed for modern creators. Whether you're posting to Instagram or crafting screenplay ideas, Capify empowers you to generate audience-ready content in seconds.
 
 
 ## 🎯 Overview
 
 Capify helps you:
 
-- 🔥 Generate 3 unique captions per prompt
-- 🎨 Customize tone and audience
-- 📈 Auto-attach trending hashtags
-- ⚡ Get results in under 30 seconds
-- ✍️ Maintain consistent brand voice
+* 🔥 Generate optimized captions or story content in seconds
+* 🎨 Tailor voice, tone, and structure to your brand or genre
+* 📈 Automatically generate hashtags or structured narratives
+* ⚡ Deliver fast, personalized results using DeepSeek R1
+* ✍️ Maintain creative consistency across social platforms and projects
 
 ---
 
 ## ✨ Features
 
-### 🤖 AI Caption Generation
-- **Multiple Variations:** Generates 3 distinct captions per input
-- **Tone Control:** 6 writing styles (casual, witty, bold, poetic, etc.)
-- **Audience Optimization:** 8 audience types for targeting
-- **Hashtag Intelligence:** Auto-generates 15–20 relevant hashtags
+### 📸 Capify (Instagram Caption Generator)
 
-### 💻 Beautiful & Modern UI
-- Responsive design (desktop, tablet, mobile)
-- Dark mode support
-- One-click copy functionality
+* **Multiple Variations:** Generates 3 distinct captions per prompt
+* **Tone Control:** Choose from 6 writing styles (casual, witty, bold, poetic, etc.)
+* **Audience Optimization:** Target 8 distinct audience types
+* **Hashtag Intelligence:** Generate 15–20 relevant, trending hashtags
+* **One-Click Copy:** Clipboard copy for quick sharing
+
+### 🎬 Capify Studio (AI Content Studio)
+
+* **Creative Modes:** Supports 6 content types:
+
+  * Screenplay / Script
+  * Video Concept
+  * Podcast Outline
+  * Story Treatment
+  * Content Series
+  * Character Development
+* **Dynamic Form UI:** Tailored inputs for each content type — genre, tone, target, length
+* **Instant Preview:** Real-time generation view with cinematic layout
+* **DeepSeek R1 0528:** Used for long-form narrative generation via OpenRouter
+* **Studio-Themed Interface:** Bold dark UI with orange/yellow gradients for creativity
+
+### 💻 Beautiful & Modern UI (Shared Across Tools)
+
+* Responsive design (desktop, tablet, mobile)
+* Clean layout with intuitive user flows
+* Dark mode with animated gradients
+* Smooth UX across generation, preview, and copy stages
 
 ### 🧑‍💻 Developer-Friendly
-- Built with **TypeScript** and **Next.js App Router**
-- Uses **Vercel AI SDK** and **DeepSeek R1** via OpenRouter
-- Reusable, clean component architecture
-- Styled with **Tailwind CSS** and **shadcn/ui**
+
+* Modular codebase with component-first architecture
+* Full **TypeScript** support with reusable server actions
+* Integrated with **DeepSeek R1** via **OpenRouter API**
+* Built using **Next.js 14 App Router** and deployed via **Vercel**
+* Custom theming via **Tailwind CSS** and **shadcn/ui**
 
 ---
 
@@ -69,5 +90,12 @@ The API key needs to be used by the developer by himself/herself as:
 - Step 2: Get your OpenRouter API Key
 - Step 3: Add the key to your `.env.local` file
 - Step 4: Restart your development server
+
+
+
+
+
+
+
 
 
