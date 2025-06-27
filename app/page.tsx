@@ -207,7 +207,7 @@ export default function LandingPage() {
               <div className="mt-16 p-8 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-sm">
                 <p className="text-gray-400 text-sm mb-3 uppercase tracking-wider">Created by</p>
                 <p className="text-3xl font-black text-yellow-400">Sparsh Taparia</p>
-                <p className="text-gray-300 mt-2 text-lg">AI Engineer & Content Strategist</p>
+                <p className="text-gray-300 mt-2 text-lg">CSE Student, VIT Vellore</p>
               </div>
             </div>
 
