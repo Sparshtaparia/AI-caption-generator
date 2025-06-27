@@ -52,15 +52,7 @@ Capify helps you:
 
 ---
 
-## 🚀 Getting Started
-
-### 🔧 Prerequisites
-
-- Node.js `v18+`
-- npm or yarn
-- OpenRouter API key
-
-### 📦 Installation/Cloning the project
+## 📦 Installation
 
 ```bash
 git clone https://github.com/Sparshtaparia/AI-caption-generator.git
